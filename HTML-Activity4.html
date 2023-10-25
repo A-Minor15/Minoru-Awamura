@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Activity4</title>
+  <style>
+    th {
+      text-align: left;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Please fill this survey form</h1>
+
+  <table style="width: 100%;">
+    <tr>
+      <th>First Name:</th>
+      <td><input type="text" name="first_name" id="first-name" required></td>
+      <th>MI:</th>
+      <td><input type="text" name="mi" id="mi"></td>
+      <th>Last Name:</th>
+      <td><input type="text" name="last_name" id="last-name" required></td>
+    </tr>
+    <tr>
+      <th>City:</th>
+      <td><input type="text" name="city" id="city" required></td>
+      <th>State:</th>
+      <td><input type="text" name="state" id="state" required></td>
+      <th>Zip Code:</th>
+      <td><input type="text" name="zip_code" id="zip-code" required></td>
+    </tr>
+  </table>
+
+  <p>Choose a Sport:</p>
+  <input type="checkbox" name="sport" id="basketball">
+  <label for="basketball">Basketball</label>
+  <input type="checkbox" name="sport" id="football">
+  <label for="football">Football</label>
+  <input type="checkbox" name="sport" id="hockey">
+  <label for="hockey">Hockey</label>
+
+  <p>Choose a Year:</p>
+  <input type="radio" name="year" id="freshman">
+  <label for="freshman">Freshman</label>
+  <input type="radio" name="year" id="sophomore">
+  <label for="sophomore">sophomore</label>
+  <input type="radio" name="year" id="junior">
+  <label for="junior">Junior</label>
+  <input type="radio" name="year" id="senior">
+  <label for="senior">Senior</label>
+
+  <p>Choose your favorite food:</p>
+  <select name="favorite_food" id="favorite-food" multiple>
+    <option value="chips">Chips</option>
+    <option value="pizza">Pizza</option>
+    <option value="nachos">Nachos</option>
+  </select>
+
+  <br><br>
+
+  <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Please let us know your comments"></textarea>
+
+  <br>
+
+  <input type="submit" value="Send it" id="submit">
+  <button type="reset">Clear it</button>
+</body>
+</html>
